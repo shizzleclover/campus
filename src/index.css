@@ -1,0 +1,117 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #000;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.location-scaffold {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 -4px 30px rgba(0,0,0,0.2);
+  transform: translateY(0);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 10;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .location-scaffold {
+    bottom: 24px;
+    left: 24px;
+    right: auto;
+    width: 380px;
+    border-radius: 20px;
+    max-height: 90vh;
+  }
+}
+
+.scaffold-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.scaffold-header h2 {
+  margin: 0 0 6px 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.close-btn {
+  background: #f0f0f0;
+  border: none;
+  font-size: 1.2rem;
+  line-height: 1;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  cursor: pointer;
+  padding: 0;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.close-btn:hover {
+  background: #e0e0e0;
+}
+
+.type-label {
+  margin: 0 0 16px 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #007aff;
+  letter-spacing: 0.8px;
+}
+
+.description {
+  margin: 0 0 24px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+.enter-btn {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.enter-btn:active {
+  background-color: #005bb5;
+  transform: scale(0.98);
+}
+
+.coming-soon {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  margin: 24px 0 0 0;
+}
