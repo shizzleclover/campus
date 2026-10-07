@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import type { UniversityMap, LocationData, DecorativeBuilding, RoadSegment, PropPlacement, WaterFeature, GroundPatch, MapLot } from '../../university/schema/types';
+import type { UniversityMap, LocationData, DecorativeBuilding } from '../../university/schema/types';
 import { demoUniversityMap } from '../../university/data/demo/demoMap';
 import { BuildingFactory } from '../../world/buildings/BuildingFactory';
 
